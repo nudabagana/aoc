@@ -11,7 +11,6 @@ calibration_val = 0
 
 with open(elf_file) as elf_txt:
     for line in elf_txt.readlines():
-        re.search(r'\d+', line).group(0)
         first_number = int(re.search(r'\d+', line).group(0)) * 10
         last_number = int(re.search(r'\d+', line[::-1]).group(0))
         full_number = first_number + last_number
