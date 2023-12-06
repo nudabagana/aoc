@@ -1,3 +1,6 @@
 [submodule "advent-of-code-2023"]
 	path = 2023/mantas
 	url = https://github.com/MantasSidabras/advent-of-code-2023
+[submodule "2023/brendonas"]
+	path = 2023/brendonas
+	url = git@github.com:brendonsa/AOC2023.git
