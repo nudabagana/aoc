@@ -1,3 +1,3 @@
 import Foundation
 
-print(pow(2.0,2.0))
+print(6/2)

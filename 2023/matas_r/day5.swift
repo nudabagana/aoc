@@ -1,6 +1,6 @@
 import Foundation
 
-func day5part1(_ input: String) -> String {
+func part2(_ input: String) -> String {
     let lines = input
     .split(whereSeparator: \.isNewline)
 
