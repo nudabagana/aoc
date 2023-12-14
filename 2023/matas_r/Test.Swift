@@ -1,3 +1,3 @@
 import Foundation
 
-print(6/2)
+print(Int.max)

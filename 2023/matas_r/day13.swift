@@ -35,11 +35,10 @@ func part2(_ input: String) -> String {
         let (ignoreH, ignoreV) = processGrid(grid, -1, -1)
         var found = false
         for i in 0..<grid.count {
-            if (!found){
                 for i2 in 0..<grid[i].count{
                     if (!found) {
-                        var cGrid = grid
-                        cGrid[i][i2] = cGrid[i][i2] == "." ? "#" : "."
+                        grid[i][i2] = grid[i][i2] == "." ? "#" : "."
+                        // solve
                         
                         let res = processGrid(cGrid, ignoreH, ignoreV)
                         if (res.0 > 0 || res.1 > 0){
