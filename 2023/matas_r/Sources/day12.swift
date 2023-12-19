@@ -1,6 +1,7 @@
 import Foundation
 
 func part1(_ input: String) -> String {
+
     return "\(0)"
 }
 
@@ -10,17 +11,23 @@ func part2(_ input: String) -> String {
 
 let input =
 #"""
-...#......
-.......#..
-#.........
-..........
-......#...
-.#........
-.........#
-..........
-.......#..
-#...#.....
+#.#.### 1,1,3
+.#...#....###. 1,1,3
+.#.###.#.###### 1,3,1,6
+####.#...#... 4,1,1
+#....######..#####. 1,6,5
+.###.##....# 3,2,1
 """#
+
+func makePears<T>(_ array: [T]) -> [(T, T)] {
+    var pairs = [(T, T)]()
+    for i in 0..<array.count {
+        for j in i+1..<array.count {
+            pairs.append((array[i], array[j]))
+        }
+    }
+    return pairs
+}
 
 let CORNERS: [Character] = ["7", "J", "L", "F"]
 let ALL_DIRS:  [Direction] = [.N, .E, .S, .W]
