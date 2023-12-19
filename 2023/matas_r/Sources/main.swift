@@ -4,3 +4,4 @@
 let output = part2(dayInput)
 
 print(output)
+
