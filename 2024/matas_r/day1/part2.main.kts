@@ -3,7 +3,7 @@ import kotlin.math.abs
 
 val startTime = System.nanoTime()
 
-val INPUT_FILE = File("./Day1_input.txt")
+val INPUT_FILE = File("./input.txt")
 
 val (list1, list2) = readLists(INPUT_FILE)
 
